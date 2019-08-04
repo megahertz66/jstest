@@ -1,0 +1,10 @@
+/* main.thml's css files */
+
+/* 设置标题栏在底部 */
+div.stack_label{
+    width: 100%;
+    height: 30px;
+    background-color: cornflowerblue;
+    position: fixed;
+    bottom: 0;
+}
