@@ -99,8 +99,8 @@ function push_icon(Tbody)
     for(i in top_arr){
         print_icon(top_arr[i].app_name, top_arr[i].app_icon_addr, top_arr[i].app_webside, 
                     TLpos, TRpos, Tbody);
-        if(TRpos >= mix_col-60){
-            TLpos += 60;
+        if(TRpos >= mix_col-80){
+            TLpos += 80;
             TRpos = 0;
         }else if(TLpos >= mix_row-60){
             alert("图标过多！整少点");
