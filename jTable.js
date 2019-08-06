@@ -49,7 +49,7 @@ var nice_tool = new topDesk_mate("nice_tool", "./picture/change.png",
         "http://www.alltoall.net/?utm_source=wechat_session&utm_medium=social&utm_oi=783696239152746496");
 
 /* ***************************************************************
- *   参数名：print_icon
+ *   函数名：print_icon
  *   功  能：将元素使用JS设置其配置
  *   参  数：前三个参数可见topDesk_mate参数，后两个参数为图标在桌面的绝对位置
  *           最后一个参数Tbody 是这些图标元素的父元素。
@@ -82,7 +82,7 @@ function print_icon(Tname, Tdress, Twebside, TLpos, TRpos, Tbody)
 }
 
 /* ***************************************************************
- *   参数名：push_icon
+ *   函数名：push_icon
  *   功  能：自动按照先竖后横排列图标
  *   参  数：只有一个参数Tbody 是桌面图标元素的父元素。
  * ***************************************************************
@@ -109,6 +109,20 @@ function push_icon(Tbody)
         TRpos += 80;
     }
 }
+/* ***************************************************************
+ *   add_label()
+ *   功  能：获得拖入input元素中的网址
+ *   参  数：无！
+ * ***************************************************************
+*/ 
+function add_label()
+{   
+    // 未来加入判断，用户按的是那个键
+    var Tcontent = document.getElementById("appending").value;
+    console.log(Tcontent);
+    return Tcontent;
+}
+
 
 // ///////////////////////////////////////////////
 //                  main
