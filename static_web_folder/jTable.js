@@ -35,17 +35,17 @@ var Fbody = document.getElementById("first_body");
  *   参数3：如果添加为一个网站的话，填写网址。
  * ***************************************************************
 */
-var Tgithub = new topDesk_mate("GitHub", "./picture/github_ico.png", "https://github.com/");
+var Tgithub = new topDesk_mate("GitHub", "../picture/github_ico.png", "https://github.com/");
 
-var Tzhihu  = new topDesk_mate("知乎", "./picture/exam_ku.png", "https://www.zhihu.com/");
+var Tzhihu  = new topDesk_mate("知乎", "../picture/exam_ku.png", "https://www.zhihu.com/");
 
-var googletr= new topDesk_mate("谷歌翻译", "./picture/trslation.png",
+var googletr= new topDesk_mate("谷歌翻译", "../picture/trslation.png",
                  "https://translate.google.cn/?hl=zh-CN&tab=TT");
                  
-var vm_linux= new topDesk_mate("VM_Linux", "./picture/tu_Linux.png", 
+var vm_linux= new topDesk_mate("VM_Linux", "../picture/tu_Linux.png", 
         "https://bellard.org/jslinux/vm.html?url=https://bellard.org/jslinux/buildroot-x86.cfg");
 
-var nice_tool = new topDesk_mate("nice_tool", "./picture/change.png", 
+var nice_tool = new topDesk_mate("nice_tool", "../picture/change.png", 
         "http://www.alltoall.net/?utm_source=wechat_session&utm_medium=social&utm_oi=783696239152746496");
 
 /* ***************************************************************
