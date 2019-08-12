@@ -18,20 +18,6 @@ function creatXMLDoc()
     }
 }
 
-// 发出一个异步请求~
-function loadXMLDoc(cgi_url)
-{
-    newXML = creatXMLDoc();
-    if(newXML){
-        newXML.onreadystatechange = state_Change;        //TODO add function name
-        newXML.open("GET", cgi_url, true);              //使用异步方式初始化一个请求。
-        newXML.send(null);
-    }
-    else{
-        alert("说你点啥好，使谷歌！");
-    }
-}
-
 // 按照cgi返回的界面进行对当前页面的修改。
 function cgi_change()
 {
@@ -58,6 +44,20 @@ function state_Change()
         {
             alert("Problem retrieving XML data");
         }
+    }
+}
+
+// 发出一个异步请求~
+function loadXMLDoc(cgi_url)
+{
+    newXML = creatXMLDoc();
+    if(newXML){
+        newXML.onreadystatechange = state_Change;        //TODO add function name
+        newXML.open("GET", cgi_url, true);              //使用异步方式初始化一个请求。
+        newXML.send(null);
+    }
+    else{
+        alert("说你点啥好，使谷歌！");
     }
 }
 

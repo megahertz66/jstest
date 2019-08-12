@@ -11,7 +11,7 @@ void cgiOutPut()
     fprintf(cgiOut, "<p>%s</p>", label);
 }
 
-void cgiMain()
+int cgiMain()
 {
     cgiOutPut();
     return 0;
