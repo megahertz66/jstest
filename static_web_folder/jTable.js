@@ -8,9 +8,10 @@
  * ***************************************************************
 */
 
-var top_map = new Map();
+//var top_map = new Map();
 var count = 0;
 var top_arr = [];
+
 class topDesk_mate {
     constructor(app_name, app_icon_addr, app_webside) {
         this.app_name = app_name;
@@ -115,13 +116,13 @@ function push_icon(Tbody)
  *   参  数：无！
  * ***************************************************************
 */ 
-function add_label()
-{   
-    // 未来加入判断，用户按的是那个键
-    var Tcontent = document.getElementById("appending").value;
-    console.log(Tcontent);
-    return Tcontent;
-}
+// function add_label()
+// {   
+//     // 未来加入判断，用户按的是那个键
+//     var Tcontent = document.getElementById("appending").value;
+//     console.log(Tcontent);
+//     return Tcontent;
+// }
 
 
 // ///////////////////////////////////////////////
